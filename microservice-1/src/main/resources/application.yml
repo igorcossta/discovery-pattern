@@ -2,7 +2,7 @@ server:
   port: 0
 spring:
   application:
-    name: microservice1
+    name: microservice1-app
 eureka:
   instance:
     # eureka client instance registers incorrectly if 'server.port' is set to 0

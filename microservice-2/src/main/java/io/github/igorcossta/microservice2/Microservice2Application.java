@@ -16,7 +16,7 @@ public class Microservice2Application {
 
     @GetMapping("microservice2-endpoint")
     public String microservice2() {
-        String url = "http://microservice1/microservice1-endpoint";
+        String url = "http://GATEWAY-APP/microservice1-endpoint";
         return restTemplate().getForObject(url, String.class);
     }
 

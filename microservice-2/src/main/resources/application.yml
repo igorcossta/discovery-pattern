@@ -1,5 +1,5 @@
 server:
-  port: 0
+  port: 9495
 spring:
   application:
-    name: microservice2
+    name: microservice2-app
