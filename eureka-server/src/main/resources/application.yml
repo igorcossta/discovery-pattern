@@ -1,0 +1,10 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+  server:
+    renewal-percent-threshold: 0.85
+spring:
+  application:
+    name: eureka-server
