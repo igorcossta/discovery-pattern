@@ -3,3 +3,7 @@ server:
 spring:
   application:
     name: microservice1
+eureka:
+  instance:
+    # eureka client instance registers incorrectly if 'server.port' is set to 0
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
